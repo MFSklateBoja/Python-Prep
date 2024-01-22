@@ -32,10 +32,10 @@ def extrae_primos_de_lista(lista):
 
 # In[26]:
 
-
-lis_completa = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-lis_primos = extrae_primos_de_lista(lis_completa)
-lis_primos
+if (__name__ == "__main__") :
+    lis_completa = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    lis_primos = extrae_primos_de_lista(lis_completa)
+    lis_primos
 
 
 # 3) Crear una función que al recibir una lista de números, devuelva el que más se repite y cuántas veces lo hace. Si hay más de un "más repetido", que devuelva cualquiera
@@ -66,10 +66,10 @@ def valor_modal(lista):
 
 # In[36]:
 
-
-lis = [1,1,5,6,8,10,22,5,6,4,11,9,5]
-moda, repite = valor_modal(lis)
-print('El valor modal es', moda, 'y se repite', repite, 'veces.')
+if (__name__ == "__main__") :
+    lis = [1,1,5,6,8,10,22,5,6,4,11,9,5]
+    moda, repite = valor_modal(lis)
+    print('El valor modal es', moda, 'y se repite', repite, 'veces.')
 
 
 # 4) Crear una función que convierta entre grados Celsius, Farenheit y Kelvin<br>
@@ -116,27 +116,27 @@ def conversion_grados(valor, origen, destino):
 
 # In[59]:
 
-
-print('1 grado Celsius a Celsius:', conversion_grados(1, 'celsius', 'celsius'))
-print('1 grado Celsius a Kelvin:', conversion_grados(1, 'celsius', 'kelvin'))
-print('1 grado Celsius a Farenheit:', conversion_grados(1, 'celsius', 'farenheit'))
-print('1 grado Kelvin a Celsius:', conversion_grados(1, 'kelvin', 'celsius'))
-print('1 grado Kelvin a Kelvin:', conversion_grados(1, 'kelvin', 'kelvin'))
-print('1 grado Kelvin a Farenheit:', conversion_grados(1, 'kelvin', 'farenheit'))
-print('1 grado Farenheit a Celsius:', conversion_grados(1, 'farenheit', 'celsius'))
-print('1 grado Farenheit a Kelvin:', conversion_grados(1, 'farenheit', 'kelvin'))
-print('1 grado Farenheit a Farenheit:', conversion_grados(1, 'farenheit', 'farenheit'))
+if (__name__ == "__main__") :
+    print('1 grado Celsius a Celsius:', conversion_grados(1, 'celsius', 'celsius'))
+    print('1 grado Celsius a Kelvin:', conversion_grados(1, 'celsius', 'kelvin'))
+    print('1 grado Celsius a Farenheit:', conversion_grados(1, 'celsius', 'farenheit'))
+    print('1 grado Kelvin a Celsius:', conversion_grados(1, 'kelvin', 'celsius'))
+    print('1 grado Kelvin a Kelvin:', conversion_grados(1, 'kelvin', 'kelvin'))
+    print('1 grado Kelvin a Farenheit:', conversion_grados(1, 'kelvin', 'farenheit'))
+    print('1 grado Farenheit a Celsius:', conversion_grados(1, 'farenheit', 'celsius'))
+    print('1 grado Farenheit a Kelvin:', conversion_grados(1, 'farenheit', 'kelvin'))
+    print('1 grado Farenheit a Farenheit:', conversion_grados(1, 'farenheit', 'farenheit'))
 
 
 # 5) Iterando una lista con los tres valores posibles de temperatura que recibe la función del punto 5, hacer un print para cada combinación de los mismos:
 
 # In[62]:
 
-
-metricas = ['celsius','kelvin','farenheit']
-for i in range(0,3):
-    for j in range(0,3):
-        print('1 grado', metricas[i], 'a', metricas[j],':', conversion_grados(1, metricas[i], metricas[j]))
+if (__name__ == "__main__") :
+    metricas = ['celsius','kelvin','farenheit']
+    for i in range(0,3):
+        for j in range(0,3):
+            print('1 grado', metricas[i], 'a', metricas[j],':', conversion_grados(1, metricas[i], metricas[j]))
 
 
 # 6) Armar una función que devuelva el factorial de un número. Tener en cuenta que el usuario puede equivocarse y enviar de parámetro un número no entero o negativo
@@ -152,8 +152,10 @@ def factorial(numero):
     if (numero > 1):
         numero = numero * factorial(numero - 1)
     return numero
-print(factorial(3))
-print(factorial(-2))
-print(factorial(1.23))
-print(factorial('6'))
+
+if (__name__ == "__main__") :
+    print(factorial(3))
+    print(factorial(-2))
+    print(factorial(1.23))
+    print(factorial('6'))
 
